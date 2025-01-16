@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamaa - Your Mental Health Family</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./jamaa-frontend/css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Jamaa Logo" height="80">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resources">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#therapists">Therapists</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>Jamaa - Your Mental Health Family</h1>
+                    <p class="lead">Welcome to Jamaa, a platform dedicated to bridging the gap between individuals seeking mental health support and qualified mental health professionals across Africa. Whether you're looking for free resources, professional therapy, or a supportive community, Jamaa is here to guide you every step of the way. Get the support you deserve, in your language and on your terms.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="images/hero.png" alt="Mental Health Support" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="hero-cta-container">
+                        <a href="jamaa-frontend/resources.html" class="btn btn-primary-jamaa">Find Support Now</a>
+                        <a href="jamaa-frontend/join-therapist.html" class="btn btn-secondary-jamaa">Join As Therapist</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources-section">
+        <div class="container">
+            <h2 class="section-title">Mental Health Resources</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="resource-card">
+                        <div class="resource-icon">📚</div>
+                        <h3>Educational Articles</h3>
+                        <p>Access culturally relevant mental health articles and guides written by African professionals.</p>
+                        <a href="#" class="resource-link">Browse Articles</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="resource-card">
+                        <div class="resource-icon">🎥</div>
+                        <h3>Video Resources</h3>
+                        <p>Watch informative videos about mental health topics, coping strategies, and wellness tips.</p>
+                        <a href="#" class="resource-link">Watch Videos</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="resource-card">
+                        <div class="resource-icon">📱</div>
+                        <h3>Self-Help Tools</h3>
+                        <p>Try our interactive self-assessment tools and mood tracking features.</p>
+                        <a href="#" class="resource-link">Explore Tools</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="community-section">
+        <div class="container">
+            <h2 class="section-title">Join Our Community</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="community-card">
+                        <h3>Support Forums</h3>
+                        <p>Connect with others who understand your experiences in our moderated support forums.</p>
+                        <div class="forum-preview">
+                            <div class="forum-topic">
+                                <span class="topic-tag">Anxiety</span>
+                                <h4>Coping with Work Stress</h4>
+                                <p class="topic-meta">32 participants • Active 2h ago</p>
+                            </div>
+                            <div class="forum-topic">
+                                <span class="topic-tag">Wellness</span>
+                                <h4>Daily Meditation Circle</h4>
+                                <p class="topic-meta">45 participants • Active 1h ago</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary-jamaa">Join Discussion</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="community-card">
+                        <h3>Daily Wellness Tips</h3>
+                        <div class="wellness-tip">
+                            <div class="tip-icon">🌟</div>
+                            <div class="tip-content">
+                                <h4>Tip of the Day</h4>
+                                <p>"Take 5 minutes today to practice deep breathing. Find a quiet space, close your eyes, and focus on your breath."</p>
+                            </div>
+                        </div>
+                        <div class="wellness-calendar">
+                            <h4>Upcoming Wellness Events</h4>
+                            <ul class="event-list">
+                                <li>
+                                    <span class="event-date">Jan 20</span>
+                                    <span class="event-title">Group Meditation Session</span>
+                                </li>
+                                <li>
+                                    <span class="event-date">Jan 22</span>
+                                    <span class="event-title">Stress Management Workshop</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-secondary-jamaa">View All Events</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Therapist Directory Section -->
+    <section id="therapists" class="therapists-section">
+        <div class="container">
+            <h2 class="section-title">Find Your Therapist</h2>
+            <div class="search-filters">
+                <input type="text" class="form-control" placeholder="Search by name, specialty, or location">
+                <select class="form-select">
+                    <option value="">Specialty</option>
+                    <option value="anxiety">Anxiety</option>
+                    <option value="depression">Depression</option>
+                    <option value="trauma">Trauma</option>
+                    <option value="relationships">Relationships</option>
+                    <option value="stress">Stress Management</option>
+                </select>
+                <button class="btn btn-primary-jamaa">Search</button>
+            </div>
+            <div class="row therapist-cards" id="therapistList">
+                <!-- Therapist cards will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+<!-- Resources & Articles -->
+<section class="resources-section py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Resources & Articles</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Mental Health Basics</h3>
+                    <p>Understanding mental health fundamentals and self-care practices.</p>
+                    <a href="#" class="btn btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Coping Strategies</h3>
+                    <p>Practical techniques for managing anxiety and depression.</p>
+                    <a href="#" class="btn btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Family Therapy</h3>
+                    <p>Resources for maintaining healthy family relationships.</p>
+                    <a href="#" class="btn btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Crisis Support -->
+<section class="crisis-section py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <h2 class="section-title">24/7 Crisis Support</h2>
+                <p class="lead">Access emergency mental health support when you need it most.</p>
+                <div class="crisis-info">
+                    <div class="crisis-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Immediate Phone Support</span>
+                    </div>
+                    <div class="crisis-item">
+                        <i class="fas fa-comment-medical"></i>
+                        <span>Crisis Chat Service</span>
+                    </div>
+                    <div class="crisis-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Local Resource Directory</span>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary-jamaa btn-lg mt-4">Access Helplines</a>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <img src="images/community.jpg" alt="Crisis Support" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p>Have questions or feedback? Reach out to us using the contact form below.</p>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary-jamaa">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="jamaa-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-section">
+                            <div class="footer-title-wrapper">
+                                <h5 class="footer-title">About Jamaa</h5>
+                            </div>
+                            <div class="jamaa-meaning">
+                                <p class="footer-about">"Jamaa" means <em>family</em> in Swahili. We are building a supportive community for mental health across Africa.</p>
+                                <a href="about.html" class="learn-more-link">Learn more about our story →</a>
+                            </div>
+                            <div class="social-links">
+                                <a href="#" class="social-link facebook" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-link twitter" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-section">
+                            <h5 class="footer-title">Quick Links</h5>
+                            <ul class="footer-links">
+                                <li><a href="resources.html">Resources</a></li>
+                                <li><a href="find-therapist.html">Find a Therapist</a></li>
+                                <li><a href="community.html">Community</a></li>
+                                <li><a href="#contact">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-section">
+                            <h5 class="footer-title">Contact Us</h5>
+                            <ul class="contact-info">
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:support@jamaa.com">support@jamaa.com</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone-alt"></i>
+                                    <a href="tel:+237672231123">+237 672 231 123</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Douala, Cameroon</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 ">
+                        <div class="footer-section">
+                            <h5 class="footer-title">Stay Connected</h5>
+                            <p class="newsletter-text">Join our community for mental health updates.</p>
+                            <form class="newsletter-form d-flex">
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="Your email" required>
+                                    <button type="submit" class="btn btn-subscribe">
+                                        Subscribe
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <div class="container">
+                <div class="social-responsibility">
+                    <i class="fas fa-heart"></i>
+                    <p>At Jamaa, we believe in making mental healthcare accessible to all. Every interaction matters, every story counts.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright">&copy; 2025 Jamaa. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="legal-links">
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login to Jamaa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary-jamaa w-100">Login</button>
+                    </form>
+                    <p class="text-center mt-3">
+                        Don't have an account? <a href="#" class="register-link">Register</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./jamaa-frontend/js/main.js"></script>
+</body>
+</html>

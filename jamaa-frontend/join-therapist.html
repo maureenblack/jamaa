@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join as Therapist - Jamaa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logo.png" alt="Jamaa Logo" height="80">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#therapists">Therapists</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Registration Section -->
+    <section id="join-as-therapist" class="registration-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="registration-info">
+                        <h2>Join Our Network</h2>
+                        <p class="lead">Make a meaningful impact in your community</p>
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">💼</div>
+                                <div class="benefit-text">
+                                    <h4>Flexible Practice</h4>
+                                    <p>Set your own schedule and fees</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🤝</div>
+                                <div class="benefit-text">
+                                    <h4>Cultural Connection</h4>
+                                    <p>Serve your community better</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">📱</div>
+                                <div class="benefit-text">
+                                    <h4>Smart Platform</h4>
+                                    <p>Easy scheduling & payments</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="registration-form-container">
+                        <form id="therapistRegistration" class="registration-form">
+                            <div class="form-section">
+                                <h3>Personal Information</h3>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label" for="firstName">First Name*</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label" for="lastName">Last Name*</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label" for="email">Email Address*</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label" for="phone">Phone Number*</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>Professional Details</h3>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label" for="qualification">Professional Qualification*</label>
+                                        <select class="form-select" id="qualification" required>
+                                            <option value="">Select your qualification</option>
+                                            <option value="psychiatrist">Psychiatrist</option>
+                                            <option value="psychologist">Clinical Psychologist</option>
+                                            <option value="counselor">Professional Counselor</option>
+                                            <option value="social-worker">Clinical Social Worker</option>
+                                            <option value="therapist">Licensed Therapist</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label" for="license">License Number (optional)</label>
+                                        <input type="text" class="form-control" id="license" placeholder="If applicable">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 mb-3">
+                                        <label class="form-label">Areas of Specialty (select up to 3)*</label>
+                                        <div class="specialties-grid">
+                                            <div class="specialty-item">
+                                                <input type="checkbox" class="btn-check" id="anxiety" name="specialties" value="anxiety">
+                                                <label class="btn btn-outline-specialty" for="anxiety">
+                                                    <i class="fas fa-brain"></i>
+                                                    Anxiety & Stress
+                                                </label>
+                                            </div>
+                                            <div class="specialty-item">
+                                                <input type="checkbox" class="btn-check" id="depression" name="specialties" value="depression">
+                                                <label class="btn btn-outline-specialty" for="depression">
+                                                    <i class="fas fa-cloud-rain"></i>
+                                                    Depression
+                                                </label>
+                                            </div>
+                                            <div class="specialty-item">
+                                                <input type="checkbox" class="btn-check" id="trauma" name="specialties" value="trauma">
+                                                <label class="btn btn-outline-specialty" for="trauma">
+                                                    <i class="fas fa-heart-broken"></i>
+                                                    Trauma & PTSD
+                                                </label>
+                                            </div>
+                                            <div class="specialty-item">
+                                                <input type="checkbox" class="btn-check" id="relationships" name="specialties" value="relationships">
+                                                <label class="btn btn-outline-specialty" for="relationships">
+                                                    <i class="fas fa-users"></i>
+                                                    Relationships
+                                                </label>
+                                            </div>
+                                            <div class="specialty-item">
+                                                <input type="checkbox" class="btn-check" id="grief" name="specialties" value="grief">
+                                                <label class="btn btn-outline-specialty" for="grief">
+                                                    <i class="fas fa-dove"></i>
+                                                    Grief & Loss
+                                                </label>
+                                            </div>
+                                            <div class="specialty-item">
+                                                <input type="checkbox" class="btn-check" id="addiction" name="specialties" value="addiction">
+                                                <label class="btn btn-outline-specialty" for="addiction">
+                                                    <i class="fas fa-hand-holding-heart"></i>
+                                                    Addiction
+                                                </label>
+                                            </div>
+                                            <div class="specialty-item">
+                                                <input type="checkbox" class="btn-check" id="youth" name="specialties" value="youth">
+                                                <label class="btn btn-outline-specialty" for="youth">
+                                                    <i class="fas fa-child"></i>
+                                                    Youth & Teens
+                                                </label>
+                                            </div>
+                                            <div class="specialty-item">
+                                                <input type="checkbox" class="btn-check" id="family" name="specialties" value="family">
+                                                <label class="btn btn-outline-specialty" for="family">
+                                                    <i class="fas fa-home"></i>
+                                                    Family Therapy
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-text mt-2">Select up to 3 specialties that best describe your expertise</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Session Format*</label>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="virtual" name="sessionFormat" required>
+                                            <label class="form-check-label" for="virtual">Virtual Sessions</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="inPerson" name="sessionFormat">
+                                            <label class="form-check-label" for="inPerson">In-Person Sessions</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label" for="languages">Languages Spoken*</label>
+                                        <input type="text" class="form-control" id="languages" placeholder="e.g., English, French" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label" for="country">Country*</label>
+                                        <select class="form-select" id="country" required>
+                                            <option value="">Select your country</option>
+                                            <option value="cameroon">Cameroon</option>
+                                            <option value="nigeria">Nigeria</option>
+                                            <option value="ghana">Ghana</option>
+                                            <option value="kenya">Kenya</option>
+                                            <option value="southafrica">South Africa</option>
+                                            <option value="uganda">Uganda</option>
+                                            <option value="tanzania">Tanzania</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label" for="city">City*</label>
+                                        <input type="text" class="form-control" id="city" required placeholder="Enter your city">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section mb-0">
+                                <div class="form-check mb-3">
+                                    <input type="checkbox" class="form-check-input" id="terms" required>
+                                    <label class="form-check-label" for="terms">
+                                        I agree to Jamaa's Terms of Service and Privacy Policy
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary-jamaa w-100">Submit Application</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cities.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
