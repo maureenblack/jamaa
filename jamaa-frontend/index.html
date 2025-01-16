@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamaa - Your Mental Health Family</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/images/logo.png" alt="Jamaa Logo" height="80"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resources">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#therapists">Therapists</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>Your Mental Health Family</h1>
+                    <p class="lead">Connect with affordable, professional mental healthcare providers in a safe and supportive environment.</p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary-jamaa">Find a Therapist</button>
+                        <button class="btn btn-secondary-jamaa">Join as Provider</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/images/hero.png" alt="Mental Health Support" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title">How We Help</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="feature-icon resources-icon"></i>
+                        <h3>Mental Health Resources</h3>
+                        <p>Access curated articles, guides, and tools for your mental wellness journey.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="feature-icon community-icon"></i>
+                        <h3>Community Support</h3>
+                        <p>Join our supportive community forums and share experiences safely.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="feature-icon wellness-icon"></i>
+                        <h3>Daily Wellness</h3>
+                        <p>Get daily tips and meditation guides for mental well-being.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Therapist Directory Section -->
+    <section id="therapists" class="therapists-section">
+        <div class="container">
+            <h2 class="section-title">Find Your Therapist</h2>
+            <div class="search-filters">
+                <input type="text" class="form-control" placeholder="Search by name, specialty, or location">
+                <select class="form-select">
+                    <option value="">Specialty</option>
+                    <option value="anxiety">Anxiety</option>
+                    <option value="depression">Depression</option>
+                    <option value="trauma">Trauma</option>
+                    <option value="relationships">Relationships</option>
+                    <option value="stress">Stress Management</option>
+                </select>
+                <button class="btn btn-primary-jamaa">Search</button>
+            </div>
+            <div class="row therapist-cards" id="therapistList">
+                <!-- Therapist cards will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login to Jamaa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary-jamaa w-100">Login</button>
+                    </form>
+                    <p class="text-center mt-3">
+                        Don't have an account? <a href="#" class="register-link">Register</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
